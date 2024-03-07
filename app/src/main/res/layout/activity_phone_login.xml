@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".PhoneLoginActivity">
+
+    <EditText
+        android:id="@+id/phoneNumberEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Phone Number"
+        android:text="0866868790"
+        android:inputType="phone" />
+
+    <Button
+        android:id="@+id/sendCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneNumberEditText"
+        android:layout_marginTop="16dp"
+        android:text="Send Verification Code" />
+
+    <EditText
+        android:id="@+id/verificationCodeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sendCodeButton"
+        android:layout_marginTop="16dp"
+        android:hint="Enter Verification Code"
+        android:text="123456"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/verifyCodeButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/verificationCodeEditText"
+        android:layout_marginTop="16dp"
+        android:text="Verify Code" />
+
+</RelativeLayout>

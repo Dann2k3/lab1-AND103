@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_register.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+    <EditText
+        android:id="@+id/registerEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/registerPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerEmail"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:text="123456"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/registerButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerPassword"
+        android:layout_marginTop="16dp"
+        android:text="Register" />
+
+    <TextView
+        android:id="@+id/goToLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerButton"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Login"
+        android:textSize="20dp"
+        android:textColor="#3498db" />
+
+</RelativeLayout>

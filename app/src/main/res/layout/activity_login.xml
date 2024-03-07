@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_login.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/loginEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="quayeuha@gmail.com"
+        android:hint="Email" />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginEmail"
+        android:layout_marginTop="8dp"
+        android:inputType="textPassword"
+        android:text="123456"
+        android:hint="Password" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginPassword"
+        android:layout_marginTop="16dp"
+        android:text="Login" />
+
+    <Button
+        android:id="@+id/quenmkbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="10dp"
+
+        android:text="Quên mật khẩu" />
+      <Button
+        android:id="@+id/btnLoginWithOTP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quenmkbtn"
+        android:layout_marginTop="10dp"
+
+        android:text="OTP" />
+
+
+
+    <TextView
+        android:id="@+id/goToRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnLoginWithOTP"
+        android:layout_marginTop="8dp"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textSize="20dp"
+        android:textColor="#3498db" />
+
+</RelativeLayout>
