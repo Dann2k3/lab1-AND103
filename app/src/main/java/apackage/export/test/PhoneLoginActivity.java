@@ -62,10 +62,9 @@ public class PhoneLoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String verificationCode = verificationCodeEditText.getText().toString();
                 if (!verificationCode.isEmpty()) {
-//                    phoneAuthManager.verifyPhoneNumberWithCode(mVerificationId);
+                   phoneAuthManager.verifyPhoneNumberWithCode(mVerificationId);
 
-                    String email = "quayeuha@gmail.com";
-                    String password = "1234567";
+                 
 
                     // Truyền vào Activity hiện tại (this) để có thể gọi startActivity
                     LoginActivity.loginUser(email, password, PhoneLoginActivity.this);
